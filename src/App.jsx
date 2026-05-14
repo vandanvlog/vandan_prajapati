@@ -263,33 +263,41 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
+              whileHover={{ scale: 1.04, boxShadow: '0 0 40px rgba(99,102,241,0.35)' }}
+              whileTap={{ scale: 1.04 }}
               className="glass-card hover-glow"
               style={{ 
                 padding: '1.2rem', 
                 borderRadius: '2rem', 
                 display: 'flex', 
                 flexDirection: 'column',
-                gap: '1rem'
+                gap: '1rem',
+                cursor: 'pointer',
+                transition: 'box-shadow 0.3s ease'
               }}
             >
               <div style={{ 
                 borderRadius: '1.5rem', 
                 overflow: 'hidden', 
-                aspectRatio: '3/4', // Slightly taller for portrait photos
+                aspectRatio: '3/4',
                 background: 'rgba(0,0,0,0.4)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <img 
+                <motion.img 
                   src={`/gallery/${item.src}`} 
                   alt={item.title} 
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 1.1 }}
+                  transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                   style={{ 
                     maxWidth: '100%', 
                     maxHeight: '100%', 
                     objectFit: 'contain',
                     borderRadius: '1rem',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.5)'
+                    boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
+                    display: 'block'
                   }} 
                 />
               </div>

@@ -137,7 +137,7 @@ const Hero = () => {
               Explore Gallery
             </motion.button>
             <motion.button 
-              whileHover={{ scale: 1.05, background: 'rgba(255,255,255,0.05)' }}
+              whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(99, 102, 241, 0.4)" }}
               whileTap={{ scale: 0.95 }}
               className="glass-card" 
               style={{ 
@@ -145,6 +145,9 @@ const Hero = () => {
                 fontSize: '1.2rem', 
                 fontWeight: 700,
                 cursor: 'pointer',
+                background: 'var(--accent-primary)',
+                border: 'none',
+                color: 'white',
                 borderRadius: '100px'
               }}
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
