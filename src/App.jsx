@@ -39,6 +39,7 @@ import {
 import Hero from './components/Hero';
 import Section from './components/Section';
 import Gallery from './components/Gallery';
+import LifeLineSection from './components/LifeLine';
 import { FeatureCard, TimelineItem } from './components/Cards';
 
 function App() {
@@ -244,68 +245,7 @@ function App() {
       </Section>
 
       {/* Life Line Section */}
-      <Section id="lifeline" title="Life Line">
-        <div className="lifeline-grid" style={{ 
-          display: 'grid', 
-          gridTemplateColumns: '1fr 1fr 1fr', 
-          gap: '2.5rem',
-          maxWidth: '1200px',
-          margin: '0 auto'
-        }}>
-          {[
-            { src: "C.jpg", title: "Spiritual Foundation" },
-            { src: "A.jpeg", title: "Family & roots" },
-            { src: "B.jpeg", title: "Source of Energy" }
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2 }}
-              whileHover={{ scale: 1.04, boxShadow: '0 0 40px rgba(99,102,241,0.35)' }}
-              whileTap={{ scale: 1.04 }}
-              className="glass-card hover-glow"
-              style={{ 
-                padding: '1.2rem', 
-                borderRadius: '2rem', 
-                display: 'flex', 
-                flexDirection: 'column',
-                gap: '1rem',
-                cursor: 'pointer',
-                transition: 'box-shadow 0.3s ease'
-              }}
-            >
-              <div style={{ 
-                borderRadius: '1.5rem', 
-                overflow: 'hidden', 
-                aspectRatio: '3/4',
-                background: 'rgba(0,0,0,0.4)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}>
-                <motion.img 
-                  src={`/gallery/${item.src}`} 
-                  alt={item.title} 
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 1.1 }}
-                  transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                  style={{ 
-                    maxWidth: '100%', 
-                    maxHeight: '100%', 
-                    objectFit: 'contain',
-                    borderRadius: '1rem',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
-                    display: 'block'
-                  }} 
-                />
-              </div>
-              <h4 style={{ textAlign: 'center', fontSize: '1.4rem', fontWeight: 700, color: 'var(--accent-primary)' }}>{item.title}</h4>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
+      <LifeLineSection />
 
       {/* Gallery Section */}
       <Section id="gallery" title="Visual Gallery">
