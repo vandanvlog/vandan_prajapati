@@ -141,13 +141,15 @@ function App() {
           />
           <TimelineItem
             date="2015 – Present"
-            title="Senior Project Analyst (Voluntary)"
+            title="Senior Project Lead (Voluntary)"
             company="BAPS, London"
             description={
               <ul style={{ paddingLeft: '1.2rem', fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-                <li>Led “Sheru”, a Broadway-style stage production with 500+ performers (1.5M+ views).</li>
-                <li>Managed logistics, volunteer coordination, and data collection over 12+ weeks.</li>
-                <li>Designed event performance dashboards and analysed audience feedback.</li>
+                <li>Led <strong>"Sheru"</strong>, a Broadway-style stage production featuring 500+ performers, achieving <strong>1.5M+ views</strong> on YouTube.</li>
+                <li>Managed end-to-end logistics and volunteer coordination across large-scale community events.</li>
+                <li>Served as a key member of the <strong>choreography team</strong>, designing and delivering choreography for every major event.</li>
+                <li>Led the project at <strong>BAPS London Mandir</strong>, teaching dance routines and coordinating performers for all significant occasions.</li>
+                <li>Demonstrated strong leadership, creativity, and community commitment over a decade of voluntary service.</li>
               </ul>
             }
           />
