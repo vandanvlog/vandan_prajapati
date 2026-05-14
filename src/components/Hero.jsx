@@ -66,12 +66,13 @@ const Hero = () => {
         >
           <motion.span 
             variants={wordVars}
+            className="hero-name"
             style={{ 
               textTransform: 'uppercase', 
               letterSpacing: '0.8rem', 
               color: 'var(--accent-primary)',
               fontWeight: 900,
-              fontSize: '2.5rem', // Much bigger name
+              fontSize: '2.5rem',
               display: 'block',
               marginBottom: '2.5rem'
             }}
@@ -114,7 +115,8 @@ const Hero = () => {
 
           <motion.div
             variants={wordVars}
-            style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}
+            className="hero-buttons"
+            style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}
           >
             <motion.button 
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(99, 102, 241, 0.4)" }}

@@ -33,7 +33,7 @@ const Gallery = () => {
 
   return (
     <div style={{ padding: '2rem 0' }}>
-      <div style={{
+      <div className="gallery-grid" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
         gap: '1.5rem',

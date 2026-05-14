@@ -73,7 +73,7 @@ function App() {
 
       {/* About Section */}
       <Section id="about" title="Personal Profile">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '6rem', alignItems: 'center' }}>
+        <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '6rem', alignItems: 'center' }}>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -104,7 +104,7 @@ function App() {
             <p style={{ fontSize: '1.3rem', color: 'var(--text-secondary)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
               Known for strong organisational and communication skills, collaboration in cross-functional teams, and a practical, solution-focused approach to problem-solving.
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+            <div className="about-feature-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
               <FeatureCard
                 icon={Database}
                 title="AI & Data"
@@ -122,7 +122,7 @@ function App() {
 
       {/* Experience Section */}
       <Section id="experience" title="Professional Experience" className="bg-secondary">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem' }}>
+        <div className="two-col-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '4rem' }}>
           <TimelineItem
             date="April 2024 – Present"
             title="Academy Manager"
@@ -158,7 +158,7 @@ function App() {
 
       {/* Education Section */}
       <Section id="education" title="Education">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem' }}>
+        <div className="two-col-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '4rem' }}>
           <TimelineItem
             date="2024 - 2025"
             title="MSc Computer Science and Technology"
@@ -245,7 +245,7 @@ function App() {
 
       {/* Life Line Section */}
       <Section id="lifeline" title="Life Line">
-        <div style={{ 
+        <div className="lifeline-grid" style={{ 
           display: 'grid', 
           gridTemplateColumns: '1fr 1fr 1fr', 
           gap: '2.5rem',
@@ -306,7 +306,7 @@ function App() {
 
       {/* Hobbies Section */}
       <Section id="hobbies" title="Hobbies & Interests" className="bg-secondary">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+        <div className="hobbies-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '1.5rem' }}>
           {[
             { name: 'Cooking', icon: UtensilsCrossed },
             { name: 'Dancing', icon: Music },
@@ -340,7 +340,7 @@ function App() {
           style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center', padding: '5rem 2rem' }}
         >
           <h3 style={{ fontSize: '3rem', marginBottom: '1.5rem', fontWeight: 800 }}>Let's connect and build the future.</h3>
-          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '3rem' }}>
+          <div className="contact-links" style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '3rem' }}>
             <motion.a whileHover={{ scale: 1.1, y: -5 }} href={linkedinLink} target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1.1rem', fontWeight: 600 }}>
               <div className="glass-card" style={{ padding: '0.8rem' }}><Linkedin size={24} /></div> LinkedIn
             </motion.a>
