@@ -129,10 +129,13 @@ function App() {
             company="Sage Academy, London"
             description={
               <ul style={{ paddingLeft: '1.2rem', fontSize: '1.2rem', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-                <li>Delivered short-term adult training programmes focused on workplace readiness and communication.</li>
-                <li>Taught Infection Control, Professionalism, and body language skills.</li>
-                <li>Supported adult learners in gaining confidence and employability.</li>
-                <li>Managed dental practice software training and community development.</li>
+                <li>Manage academic operations at Sage Academy.</li>
+                <li>Design and deliver professional dental training courses.</li>
+                <li>Liaise with dentists and dental professionals for course development.</li>
+                <li>Support dentists, hygienists, therapists, and dental nurses in career progression.</li>
+                <li>Coordinate course schedules and learner support.</li>
+                <li>Promote flexible learning for working dental professionals.</li>
+                <li>Ensure high-quality training and a positive student experience.</li>
               </ul>
             }
           />
